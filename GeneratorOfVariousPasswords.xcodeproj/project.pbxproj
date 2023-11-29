@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		16B4B4CE2B178464003E6B0E /* PasswordParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B4B4CD2B178464003E6B0E /* PasswordParameters.swift */; };
+		16B4B4D32B178B42003E6B0E /* SelectedAlphabet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B4B4D22B178B42003E6B0E /* SelectedAlphabet.swift */; };
+		16B4B4D52B178E55003E6B0E /* SelectAlphabetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B4B4D42B178E55003E6B0E /* SelectAlphabetViewController.swift */; };
 		16D9A4772B17776900C16CE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D9A4762B17776900C16CE7 /* AppDelegate.swift */; };
 		16D9A4792B17776900C16CE7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D9A4782B17776900C16CE7 /* SceneDelegate.swift */; };
 		16D9A47B2B17776900C16CE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D9A47A2B17776900C16CE7 /* ViewController.swift */; };
@@ -18,6 +20,8 @@
 
 /* Begin PBXFileReference section */
 		16B4B4CD2B178464003E6B0E /* PasswordParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordParameters.swift; sourceTree = "<group>"; };
+		16B4B4D22B178B42003E6B0E /* SelectedAlphabet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedAlphabet.swift; sourceTree = "<group>"; };
+		16B4B4D42B178E55003E6B0E /* SelectAlphabetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectAlphabetViewController.swift; sourceTree = "<group>"; };
 		16D9A4732B17776900C16CE7 /* GeneratorOfVariousPasswords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeneratorOfVariousPasswords.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16D9A4762B17776900C16CE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16D9A4782B17776900C16CE7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +43,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16B4B4CF2B178956003E6B0E /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				16D9A47F2B17776B00C16CE7 /* Assets.xcassets */,
+				16D9A4812B17776B00C16CE7 /* LaunchScreen.storyboard */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		16B4B4D02B1789D8003E6B0E /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				16D9A47A2B17776900C16CE7 /* ViewController.swift */,
+				16D9A47C2B17776900C16CE7 /* Main.storyboard */,
+				16B4B4D42B178E55003E6B0E /* SelectAlphabetViewController.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		16B4B4D12B178A05003E6B0E /* DataStructures */ = {
+			isa = PBXGroup;
+			children = (
+				16B4B4CD2B178464003E6B0E /* PasswordParameters.swift */,
+				16B4B4D22B178B42003E6B0E /* SelectedAlphabet.swift */,
+			);
+			path = DataStructures;
+			sourceTree = "<group>";
+		};
 		16D9A46A2B17776900C16CE7 = {
 			isa = PBXGroup;
 			children = (
@@ -58,13 +90,11 @@
 		16D9A4752B17776900C16CE7 /* GeneratorOfVariousPasswords */ = {
 			isa = PBXGroup;
 			children = (
-				16B4B4CD2B178464003E6B0E /* PasswordParameters.swift */,
+				16B4B4D02B1789D8003E6B0E /* Presentation */,
+				16B4B4D12B178A05003E6B0E /* DataStructures */,
+				16B4B4CF2B178956003E6B0E /* Resourses */,
 				16D9A4762B17776900C16CE7 /* AppDelegate.swift */,
-				16D9A47A2B17776900C16CE7 /* ViewController.swift */,
 				16D9A4782B17776900C16CE7 /* SceneDelegate.swift */,
-				16D9A47C2B17776900C16CE7 /* Main.storyboard */,
-				16D9A47F2B17776B00C16CE7 /* Assets.xcassets */,
-				16D9A4812B17776B00C16CE7 /* LaunchScreen.storyboard */,
 				16D9A4842B17776B00C16CE7 /* Info.plist */,
 			);
 			path = GeneratorOfVariousPasswords;
@@ -145,6 +175,8 @@
 				16D9A4772B17776900C16CE7 /* AppDelegate.swift in Sources */,
 				16B4B4CE2B178464003E6B0E /* PasswordParameters.swift in Sources */,
 				16D9A4792B17776900C16CE7 /* SceneDelegate.swift in Sources */,
+				16B4B4D32B178B42003E6B0E /* SelectedAlphabet.swift in Sources */,
+				16B4B4D52B178E55003E6B0E /* SelectAlphabetViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
