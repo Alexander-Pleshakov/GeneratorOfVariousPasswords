@@ -152,6 +152,9 @@
                                                     </label>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="aKd-4o-ibT">
                                                         <rect key="frame" x="304" y="0.0" width="51" height="31"/>
+                                                        <connections>
+                                                            <action selector="switchLatinUppercasedValueChanged:" destination="fig-6f-AyT" eventType="valueChanged" id="pb7-bw-wnL"/>
+                                                        </connections>
                                                     </switch>
                                                 </subviews>
                                             </stackView>
@@ -166,6 +169,9 @@
                                                     </label>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jO7-xA-4Xo">
                                                         <rect key="frame" x="304" y="0.0" width="51" height="31"/>
+                                                        <connections>
+                                                            <action selector="switchLatinLowercasedValueChanged:" destination="fig-6f-AyT" eventType="valueChanged" id="Q7O-Tm-rV6"/>
+                                                        </connections>
                                                     </switch>
                                                 </subviews>
                                             </stackView>
@@ -180,6 +186,9 @@
                                                     </label>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="i8t-1z-Okd">
                                                         <rect key="frame" x="304" y="0.0" width="51" height="31"/>
+                                                        <connections>
+                                                            <action selector="switchRussianUppercasedValueChanged:" destination="fig-6f-AyT" eventType="valueChanged" id="4LM-ur-pDz"/>
+                                                        </connections>
                                                     </switch>
                                                 </subviews>
                                             </stackView>
@@ -194,6 +203,9 @@
                                                     </label>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="NoX-JM-R0R">
                                                         <rect key="frame" x="304" y="0.0" width="51" height="31"/>
+                                                        <connections>
+                                                            <action selector="switchRussianLowercasedValueChanged:" destination="fig-6f-AyT" eventType="valueChanged" id="KId-Ru-ouP"/>
+                                                        </connections>
                                                     </switch>
                                                 </subviews>
                                             </stackView>
@@ -208,6 +220,9 @@
                                                     </label>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xXW-bi-4bd">
                                                         <rect key="frame" x="304" y="0.0" width="51" height="31"/>
+                                                        <connections>
+                                                            <action selector="switchSymbolsValueChanged:" destination="fig-6f-AyT" eventType="valueChanged" id="fhm-yM-QQc"/>
+                                                        </connections>
                                                     </switch>
                                                 </subviews>
                                             </stackView>
@@ -222,6 +237,9 @@
                                                     </label>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DPh-8F-DSg">
                                                         <rect key="frame" x="304" y="0.0" width="51" height="31"/>
+                                                        <connections>
+                                                            <action selector="switchNumbersValueChanged:" destination="fig-6f-AyT" eventType="valueChanged" id="cX1-xG-Zc5"/>
+                                                        </connections>
                                                     </switch>
                                                 </subviews>
                                             </stackView>
@@ -268,6 +286,14 @@
                             <constraint firstItem="pOl-vr-V5K" firstAttribute="top" secondItem="2fG-pk-3mi" secondAttribute="top" constant="40" id="TXE-OS-nqK"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="latinLowercaseSwitch" destination="jO7-xA-4Xo" id="FN5-6M-BbO"/>
+                        <outlet property="latinUppercaseSwitch" destination="aKd-4o-ibT" id="nPe-28-Cls"/>
+                        <outlet property="numbersSwitch" destination="DPh-8F-DSg" id="Zya-ma-05p"/>
+                        <outlet property="russianLowercaseSwitch" destination="NoX-JM-R0R" id="oMf-yc-jFO"/>
+                        <outlet property="russianUppercaseSwitch" destination="i8t-1z-Okd" id="IXg-Ch-jbH"/>
+                        <outlet property="symbolsSwitch" destination="xXW-bi-4bd" id="5OE-es-S3Q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ly8-bL-asf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
